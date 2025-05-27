@@ -457,9 +457,9 @@ img {
 }
 .footer {
   background-color: var(--verde-header);
-  background-image: url('elecho.jpg'); /* URL del patrón aplicado */
+  background-image: url('elecho.jpg'); /* Asegurate que el path esté bien */
   background-repeat: repeat;
-  background-size: 180px auto; /* Tamaño del patrón ajustable */
+  background-size: 180px auto;
   color: var(--texto-titulo);
   padding: 40px 0 20px 0;
   text-align: center;
