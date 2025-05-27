@@ -457,7 +457,7 @@ img {
 }
 .footer {
   background-color: var(--verde-header);
-  background-image: url('assets/img/patron-hojas.jpg'); /* URL del patrón aplicado */
+  background-image: url('elecho.jpg'); /* URL del patrón aplicado */
   background-repeat: repeat;
   background-size: 180px auto; /* Tamaño del patrón ajustable */
   color: var(--texto-titulo);
