@@ -94,5 +94,18 @@
         nav.classList.toggle('nav-open');
         navToggle.classList.toggle('open');
     });
+    // Carrusel de profesionales
+    const carrusel = document.getElementById("carruselEquipo");
+    const btnIzq = document.getElementById("btnIzq");
+    const btnDer = document.getElementById("btnDer");
+    const cardWidth = carrusel.querySelector(".equipo-tarjeta").offsetWidth + 24;
+
+    btnDer.addEventListener("click", () => {
+        carrusel.scrollBy({ left: cardWidth, behavior: "smooth" });
+    });
+
+    btnIzq.addEventListener("click", () => {
+        carrusel.scrollBy({ left: -cardWidth, behavior: "smooth" });
+    });
 </script>
 </html>
