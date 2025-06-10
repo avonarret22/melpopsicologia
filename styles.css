@@ -101,15 +101,6 @@ img {
   color: var(--verde-btn);
 }
 
-.nav-cta {
-  background: var(--verde-btn);
-  color: var(--blanco);
-}
-
-.nav-cta:hover {
-  background: var(--verde-btn-hover);
-  color: var(--blanco);
-}
 
 /* --- Menú hamburguesa (mobile) --- */
 .nav-toggle {
