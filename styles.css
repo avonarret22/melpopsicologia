@@ -540,3 +540,9 @@ img {
   background: var(--verde-btn-hover);
 }
 
+.success-message {
+  color: var(--texto-titulo);
+  text-align: center;
+  margin-top: 16px;
+}
+
