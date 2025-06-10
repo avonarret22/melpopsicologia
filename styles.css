@@ -63,7 +63,10 @@ img {
 
 /* Eliminamos margin-left excesivo */
 .logo {
+  display: flex;
+  align-items: center;
   margin-left: 0;
+  flex-shrink: 0;
 }
 
 .nav ul {
@@ -86,6 +89,28 @@ img {
   color: var(--verde-btn);
 }
 
+.nav-link {
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--verde-btn);
+}
+
+.nav-cta {
+  background: none;
+  color: var(--texto-titulo);
+}
+
+.nav-cta:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--verde-btn);
+}
+
 /* --- Menú hamburguesa (mobile) --- */
 .nav-toggle {
   display: none;
@@ -94,6 +119,8 @@ img {
   border: none;
   cursor: pointer;
   gap: 5px;
+  padding: 8px;
+  border-radius: 4px;
 }
 
 .bar {
@@ -357,6 +384,10 @@ img {
     gap: 24px;
     box-shadow: 0 2px 12px rgba(56,80,62,0.08);
     display: none;
+  }
+  .nav-link {
+    width: 100%;
+    padding: 12px 16px;
   }
   .nav.nav-open ul {
     display: flex;
