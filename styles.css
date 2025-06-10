@@ -22,6 +22,10 @@ body {
   color: var(--texto-normal);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -36,6 +40,21 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
+}
+
+/* Animaciones */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.animate-on-scroll.in-view {
+  animation: fadeUp 0.8s ease forwards;
 }
 
 /* --- Header --- */

@@ -10,7 +10,30 @@ function setupMenuToggle() {
             nav.classList.toggle('nav-open');
             navToggle.classList.toggle('open');
         });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('nav-open');
+                navToggle.classList.remove('open');
+            });
+        });
     }
 }
 
-document.addEventListener('DOMContentLoaded', setupMenuToggle);
+function setupScrollAnimations() {
+    const items = document.querySelectorAll('.animate-on-scroll');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    items.forEach(el => observer.observe(el));
+}
+document.addEventListener('DOMContentLoaded', () => {
+    setupMenuToggle();
+    setupScrollAnimations();
+});
