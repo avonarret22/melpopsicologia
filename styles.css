@@ -78,6 +78,13 @@ img {
 .logo img {
   height: 62px;
   width: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Eliminamos margin-left excesivo */
@@ -443,6 +450,8 @@ img {
   }
   .logo img {
     height: 44px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   .nav ul {
     flex-direction: column;
