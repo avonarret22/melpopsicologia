@@ -120,6 +120,11 @@ img {
   color: var(--verde-btn);
 }
 
+.insta-icon {
+  width: 24px;
+  height: 24px;
+}
+
 
 /* --- Menú hamburguesa (mobile) --- */
 .nav-toggle {
@@ -340,6 +345,66 @@ img {
   font-size: 0.85rem;
   color: #333;
   opacity: 0.7;
+}
+
+/* === Instagram === */
+.instagram-section {
+  background: var(--blanco);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.instagram-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  color: var(--texto-titulo);
+  margin-bottom: 24px;
+}
+
+.instagram-feed {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.instagram-feed a {
+  display: block;
+  width: 280px;
+}
+
+.instagram-feed img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Floating WhatsApp */
+.floating-wpp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: var(--verde-btn);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 100;
+}
+
+.floating-wpp.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.floating-wpp img {
+  width: 32px;
+  height: 32px;
 }
 
 /* --- Responsive --- */

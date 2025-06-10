@@ -33,7 +33,22 @@ function setupScrollAnimations() {
 
     items.forEach(el => observer.observe(el));
 }
+
+function setupFloatingWpp() {
+    const btn = document.getElementById('floating-wpp');
+    if (!btn) return;
+    function toggle() {
+        if (window.scrollY > 300) {
+            btn.classList.add('show');
+        } else {
+            btn.classList.remove('show');
+        }
+    }
+    window.addEventListener('scroll', toggle);
+    toggle();
+}
 document.addEventListener('DOMContentLoaded', () => {
     setupMenuToggle();
     setupScrollAnimations();
+    setupFloatingWpp();
 });
