@@ -102,13 +102,13 @@ img {
 }
 
 .nav-cta {
-  background: var(--verde-btn);
-  color: var(--blanco);
+  background: none;
+  color: var(--texto-titulo);
 }
 
 .nav-cta:hover {
-  background: var(--verde-btn-hover);
-  color: var(--blanco);
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--verde-btn);
 }
 
 /* --- Menú hamburguesa (mobile) --- */
