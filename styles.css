@@ -364,17 +364,12 @@ img {
 .instagram-feed {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
 }
 
-.instagram-feed a {
-  display: block;
-  width: 280px;
-}
-
-.instagram-feed img {
+.instagram-feed .snapwidget-rpf {
   width: 100%;
+  max-width: 860px;
+  border: none;
   border-radius: 12px;
 }
 
