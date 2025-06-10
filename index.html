@@ -84,6 +84,20 @@
           <p class="especialidad">Terapia de Pareja y Vínculos</p>
           <p class="descripcion">Comunicación y resolución de conflictos relacionales.</p>
         </div>
+        <!-- Tarjeta 4 -->
+        <div class="equipo-tarjeta">
+          <img src="assets/img/profesional4.jpg" alt="Lic. Sofía Martínez">
+          <h3>Lic. Sofía Martínez</h3>
+          <p class="especialidad">Psicología Laboral</p>
+          <p class="descripcion">Desarrollo profesional y bienestar en el trabajo.</p>
+        </div>
+        <!-- Tarjeta 5 -->
+        <div class="equipo-tarjeta">
+          <img src="assets/img/profesional5.jpg" alt="Lic. Andrea López">
+          <h3>Lic. Andrea López</h3>
+          <p class="especialidad">Psicoterapia Humanista</p>
+          <p class="descripcion">Acompañamiento en procesos de autoconocimiento.</p>
+        </div>
       </div>
       <button class="carrusel-btn der" id="btnDer">&#8594;</button>
     </div>
@@ -126,10 +140,14 @@
             carrusel.scrollBy({ left: cardWidth, behavior: "smooth" });
         }
     }
-    let auto = setInterval(autoScroll, 4000);
-    carrusel.addEventListener('mouseenter', () => clearInterval(auto));
-    carrusel.addEventListener('mouseleave', () => {
+    let auto;
+    function startAuto() {
         auto = setInterval(autoScroll, 4000);
-    });
+    }
+    function stopAuto() {
+        clearInterval(auto);
+    }
+    carrusel.addEventListener('mouseenter', startAuto);
+    carrusel.addEventListener('mouseleave', stopAuto);
 </script>
 </html>
