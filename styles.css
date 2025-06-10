@@ -471,4 +471,50 @@ img {
   font-size: 0.95rem;
   margin-top: 60px;
 }
+
+/* === Contacto === */
+.contacto {
+  background: #fff;
+  padding: 60px 0;
 }
+
+.contacto h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  color: var(--texto-titulo);
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+.contact-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 14px 24px;
+  background: var(--verde-btn);
+  color: var(--blanco);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: var(--verde-btn-hover);
+}
+
