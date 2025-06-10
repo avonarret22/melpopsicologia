@@ -44,6 +44,18 @@
                 <img src="hero-mockup.png" alt="Ilustración personas acompañándose">
             </div>
         </section>
+
+        <section id="about" class="about">
+            <div class="container about-content">
+                <div class="about-text">
+                    <h2>Sobre nosotras</h2>
+                    <p>Somos un equipo de psicólogas comprometidas con brindar espacios de escucha y acompañamiento desde un enfoque humano e integral.</p>
+                </div>
+                <div class="about-img">
+                    <img src="hero-mockup.png" alt="Equipo MP Psicología">
+                </div>
+            </div>
+        </section>
     </main>
    <section id="equipo" class="equipo">
   <div class="container">
@@ -106,6 +118,18 @@
 
     btnIzq.addEventListener("click", () => {
         carrusel.scrollBy({ left: -cardWidth, behavior: "smooth" });
+    });
+    function autoScroll() {
+        if (carrusel.scrollLeft + carrusel.offsetWidth >= carrusel.scrollWidth - cardWidth) {
+            carrusel.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+            carrusel.scrollBy({ left: cardWidth, behavior: "smooth" });
+        }
+    }
+    let auto = setInterval(autoScroll, 4000);
+    carrusel.addEventListener('mouseenter', () => clearInterval(auto));
+    carrusel.addEventListener('mouseleave', () => {
+        auto = setInterval(autoScroll, 4000);
     });
 </script>
 </html>

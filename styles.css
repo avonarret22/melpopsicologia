@@ -182,6 +182,47 @@ img {
   object-fit: cover;
 }
 
+
+/* === Sobre nosotras === */
+.about {
+  background: var(--blanco);
+  padding: 60px 0;
+}
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.about-text {
+  flex: 1 1 60%;
+}
+.about-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  color: var(--texto-titulo);
+  margin-bottom: 16px;
+}
+.about-text p {
+  line-height: 1.6;
+  color: var(--texto-normal);
+}
+.about-img {
+  flex: 1 1 40%;
+}
+.about-img img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+@media (max-width: 700px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-img {
+    max-width: 300px;
+  }
+}
 /* === Nuestro equipo === */
 .equipo {
   background: #fff;
@@ -196,23 +237,6 @@ img {
   margin-bottom: 40px;
 }
 
-.equipo-carrusel {
-  display: flex;
-  overflow-x: auto;
-  gap: 24px;
-  padding: 0 24px;
-  scroll-snap-type: x mandatory;
-}
-
-.equipo-tarjeta {
-  flex: 0 0 280px;
-  background: var(--verde-fondo);
-  border-radius: 14px;
-  padding: 24px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
-  scroll-snap-align: start;
-  text-align: center;
-}
 
 .equipo-tarjeta img {
   width: 100px;
@@ -240,24 +264,6 @@ img {
   color: var(--texto-normal);
 }
 
-.equipo-carrusel::-webkit-scrollbar {
-  height: 6px;
-}
-
-.equipo-carrusel::-webkit-scrollbar-thumb {
-  background: var(--verde-btn);
-  border-radius: 3px;
-}
-
-/* === Footer === */
-.footer {
-  background-color: var(--verde-header);
-  background-image: url("../assets/img/elecho.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 300px;
-}
 
 
 
@@ -456,12 +462,13 @@ img {
 }
 .footer {
   background-color: var(--verde-header);
-  background-image: url('elecho.jpg'); /* Asegurate que el path esté bien */
-  background-repeat: repeat;
-  background-size: 180px auto;
+  background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("elecho.jpg");
+  background-size: cover;
+  background-position: center;
   color: var(--texto-titulo);
-  padding: 40px 0 20px 0;
+  padding: 60px 0 30px;
   text-align: center;
   font-size: 0.95rem;
   margin-top: 60px;
+}
 }
