@@ -20,6 +20,11 @@
                     <li><a class="nav-link" href="#about">Sobre nosotras</a></li>
                     <li><a class="nav-link" href="#equipo">Nuestro equipo</a></li>
                     <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li>
+                        <a class="nav-link" href="https://www.instagram.com/melpopsicologia/" target="_blank" aria-label="Instagram">
+                            <img src="instagram.svg" alt="Instagram" class="insta-icon">
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
@@ -103,6 +108,14 @@
     </div>
   </div>
 </section>
+
+        <section id="instagram" class="instagram-section">
+            <div class="container">
+                <h2>Últimos posts en Instagram</h2>
+                <div id="instagram-feed" class="instagram-feed"></div>
+            </div>
+        </section>
+
 <footer class="footer">
   <div class="container footer-contenido">
     <p class="footer-nombre">MP Psicología</p>
@@ -111,8 +124,12 @@
     <p class="footer-copy">&copy; 2025 MP Psicología. Todos los derechos reservados.</p>
   </div>
 </footer>
+<a href="https://wa.me/541165992142" target="_blank" id="floating-wpp" class="floating-wpp">
+    <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4ac.svg" alt="WhatsApp">
+</a>
 </body>
 <script src="scripts/main.js"></script>
+<script src="scripts/instagram.js"></script>
 <script>
     // Carrusel de profesionales
     const carrusel = document.getElementById("carruselEquipo");
