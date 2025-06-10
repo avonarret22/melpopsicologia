@@ -366,7 +366,8 @@ img {
   justify-content: center;
 }
 
-.instagram-feed .snapwidget-rpf {
+.instagram-feed .snapwidget-rpf,
+.instagram-feed .snapwidget-widget {
   width: 100%;
   max-width: 860px;
   border: none;
