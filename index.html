@@ -147,7 +147,10 @@
     function stopAuto() {
         clearInterval(auto);
     }
-    carrusel.addEventListener('mouseenter', startAuto);
-    carrusel.addEventListener('mouseleave', stopAuto);
+    startAuto();
+    carrusel.addEventListener('mouseenter', stopAuto);
+    carrusel.addEventListener('touchstart', stopAuto);
+    carrusel.addEventListener('mouseleave', startAuto);
+    carrusel.addEventListener('touchend', startAuto);
 </script>
 </html>
