@@ -5,6 +5,11 @@ function setupMenuToggle() {
     const navToggle = document.getElementById('nav-toggle');
     const nav = document.getElementById('nav');
     const submenu = document.querySelector('.submenu');
+    const submenuParent = document.querySelector('.nav-parent');
+
+    if (submenu) {
+        submenu.classList.remove('open');
+    }
 
     if (navToggle && nav) {
         navToggle.addEventListener('click', () => {
@@ -12,15 +17,29 @@ function setupMenuToggle() {
             navToggle.classList.toggle('open');
         });
 
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', (e) => {
-                if (link.classList.contains('nav-parent')) {
-                    e.preventDefault();
-                    submenu.classList.toggle('open');
-                } else {
-                    nav.classList.remove('nav-open');
-                    navToggle.classList.remove('open');
-                    if (submenu) submenu.classList.remove('open');
+        if (submenuParent && submenu) {
+            submenuParent.addEventListener('click', (e) => {
+                e.preventDefault();
+                submenu.classList.toggle('open');
+            });
+        }
+
+        document.querySelectorAll('.nav-link:not(.nav-parent)').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('nav-open');
+                navToggle.classList.remove('open');
+                if (submenu) {
+                    submenu.classList.remove('open');
+                }
+            });
+        });
+
+        document.querySelectorAll('.submenu-items a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('nav-open');
+                navToggle.classList.remove('open');
+                if (submenu) {
+                    submenu.classList.remove('open');
                 }
             });
         });
