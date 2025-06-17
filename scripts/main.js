@@ -5,11 +5,19 @@ function setupMenuToggle() {
     const navToggle = document.getElementById('nav-toggle');
     const nav = document.getElementById('nav');
     const submenu = document.querySelector('.submenu');
+    if (submenu) {
+        // ensure submenu is closed on page load
+        submenu.classList.remove('open');
+    }
 
     if (navToggle && nav) {
         navToggle.addEventListener('click', () => {
-            nav.classList.toggle('nav-open');
+            const open = nav.classList.toggle('nav-open');
             navToggle.classList.toggle('open');
+            if (!open && submenu) {
+                // close submenu when collapsing the mobile menu
+                submenu.classList.remove('open');
+            }
         });
 
         document.querySelectorAll('.nav-link').forEach(link => {
