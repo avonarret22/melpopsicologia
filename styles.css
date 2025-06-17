@@ -263,6 +263,87 @@ img {
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.06);
 }
+
+/* === Beneficios === */
+.benefits {
+  background: var(--blanco);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.benefits h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  color: var(--texto-titulo);
+  margin-bottom: 16px;
+}
+
+.benefits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.benefit-item {
+  flex: 1 1 220px;
+  background: var(--verde-fondo);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+.benefit-item h3 {
+  margin-top: 0;
+  color: var(--texto-titulo);
+  font-size: 1.2rem;
+}
+
+.benefit-item p {
+  margin-bottom: 0;
+  color: var(--texto-normal);
+}
+
+/* === Opiniones === */
+.opiniones {
+  background: var(--blanco);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.opiniones h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  color: var(--texto-titulo);
+  margin-bottom: 40px;
+}
+
+.opiniones-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.opinion-item {
+  flex: 1 1 250px;
+  background: var(--verde-fondo);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+.opinion-text {
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.opinion-author {
+  margin: 0;
+  font-weight: 600;
+  color: var(--texto-titulo);
+}
 @media (max-width: 700px) {
   .about-content {
     flex-direction: column;
