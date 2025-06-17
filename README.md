@@ -34,4 +34,11 @@ Al ser un sitio estático no se requieren dependencias ni entorno de servidor. L
 - Antes de enviar cambios, comprueba que ambas páginas funcionen correctamente en navegadores modernos.
 - Envía un pull request describiendo los cambios propuestos.
 
+## Recomendaciones de SEO
+
+Las páginas incluyen metadatos básicos (descripción, palabras clave y etiquetas
+Open Graph) para facilitar su indexación en buscadores. Al agregar nuevos
+contenidos procurá mantener estas etiquetas actualizadas y utilizar texto
+alternativo descriptivo en las imágenes.
+
 ¡Gracias por colaborar!
