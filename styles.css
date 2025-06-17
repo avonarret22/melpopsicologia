@@ -163,7 +163,8 @@ img {
 }
 
 .submenu:hover > .submenu-items,
-.submenu:focus-within > .submenu-items {
+.submenu:focus-within > .submenu-items,
+.submenu.open > .submenu-items {
   display: block;
 }
 

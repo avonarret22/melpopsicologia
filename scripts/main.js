@@ -4,6 +4,7 @@
 function setupMenuToggle() {
     const navToggle = document.getElementById('nav-toggle');
     const nav = document.getElementById('nav');
+    const submenu = document.querySelector('.submenu');
 
     if (navToggle && nav) {
         navToggle.addEventListener('click', () => {
@@ -15,9 +16,11 @@ function setupMenuToggle() {
             link.addEventListener('click', (e) => {
                 if (link.classList.contains('nav-parent')) {
                     e.preventDefault();
+                    submenu.classList.toggle('open');
                 } else {
                     nav.classList.remove('nav-open');
                     navToggle.classList.remove('open');
+                    if (submenu) submenu.classList.remove('open');
                 }
             });
         });
