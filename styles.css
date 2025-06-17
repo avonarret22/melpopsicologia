@@ -162,10 +162,18 @@ img {
   color: var(--verde-btn);
 }
 
-.submenu:hover > .submenu-items,
-.submenu:focus-within > .submenu-items,
 .submenu.open > .submenu-items {
   display: block;
+}
+
+.nav-parent .arrow {
+  margin-left: 4px;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.submenu.open .nav-parent .arrow {
+  transform: rotate(180deg);
 }
 
 .insta-icon {
