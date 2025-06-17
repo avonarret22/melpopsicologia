@@ -127,6 +127,46 @@ img {
   color: var(--verde-btn);
 }
 
+.nav-parent {
+  cursor: pointer;
+}
+
+/* --- Submenú --- */
+.submenu {
+  position: relative;
+}
+
+.submenu-items {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: var(--blanco);
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  min-width: 160px;
+  z-index: 200;
+}
+
+.submenu-items li a {
+  display: block;
+  padding: 8px 16px;
+  color: var(--texto-normal);
+}
+
+.submenu-items li a:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--verde-btn);
+}
+
+.submenu:hover > .submenu-items,
+.submenu:focus-within > .submenu-items {
+  display: block;
+}
+
 .insta-icon {
   width: 24px;
   height: 24px;
@@ -553,6 +593,10 @@ img {
   .nav.nav-open ul {
     display: flex;
   }
+  .submenu-items {
+    position: static;
+    box-shadow: none;
+  }
   .nav-toggle {
     display: flex;
   }
@@ -714,5 +758,24 @@ img {
   color: var(--texto-titulo);
   text-align: center;
   margin-top: 16px;
+}
+
+/* --- Blog --- */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.blog-post h2 {
+  margin-bottom: 8px;
+  color: var(--texto-titulo);
+}
+
+.blog-date {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: var(--texto-normal);
 }
 

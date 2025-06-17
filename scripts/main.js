@@ -12,9 +12,13 @@ function setupMenuToggle() {
         });
 
         document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                nav.classList.remove('nav-open');
-                navToggle.classList.remove('open');
+            link.addEventListener('click', (e) => {
+                if (link.classList.contains('nav-parent')) {
+                    e.preventDefault();
+                } else {
+                    nav.classList.remove('nav-open');
+                    navToggle.classList.remove('open');
+                }
             });
         });
     }
