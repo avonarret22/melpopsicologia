@@ -805,3 +805,38 @@ img {
   color: var(--texto-normal);
 }
 
+/* --- Cursos --- */
+.cursos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.curso-item {
+  flex: 1 1 280px;
+  background: var(--verde-fondo);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+.curso-item img {
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.curso-item h3 {
+  margin-top: 0;
+  color: var(--texto-titulo);
+}
+
+.curso-item .precio,
+.curso-item .duracion {
+  font-weight: 600;
+  color: var(--texto-titulo);
+  margin-bottom: 4px;
+}
+

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - MP Psicología</title>
+    <title>Cursos - MP Psicología</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -41,38 +41,39 @@
             </button>
         </div>
     </header>
+
     <main>
-        <section class="contacto">
+        <section class="cursos">
             <div class="container animate-on-scroll">
-                <h2>Contacto</h2>
-                <form class="contact-form" id="contact-form">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" required>
-
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" name="apellido" required>
-
-                    <label for="edad">Edad</label>
-                    <input type="number" id="edad" name="edad" min="0" required>
-
-                    <label for="genero">Género</label>
-                    <input type="text" id="genero" name="genero" required>
-
-                    <label for="ocupacion">Ocupación</label>
-                    <input type="text" id="ocupacion" name="ocupacion">
-
-                    <label for="telefono">Teléfono de contacto</label>
-                    <input type="tel" id="telefono" name="telefono" required>
-
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <button type="submit">Enviar</button>
-                    <p id="form-success" class="success-message" style="display:none;">¡Gracias por contactarnos!</p>
-                </form>
+                <h1>Cursos</h1>
+                <p class="subtitle">Explorá nuestro material audiovisual pensado para tu crecimiento.</p>
+                <div class="cursos-grid">
+                    <article class="curso-item">
+                        <img src="abst1.webp" alt="Introducción a la Psicología">
+                        <h3>Introducción a la Psicología</h3>
+                        <p>Conceptos básicos para comprender el comportamiento humano.</p>
+                        <p class="precio">Costo: $30</p>
+                        <p class="duracion">Duración: 3 horas</p>
+                    </article>
+                    <article class="curso-item">
+                        <img src="contempla.webp" alt="Mindfulness para la vida diaria">
+                        <h3>Mindfulness para la vida diaria</h3>
+                        <p>Estrategias de atención plena para reducir el estrés.</p>
+                        <p class="precio">Costo: $25</p>
+                        <p class="duracion">Duración: 2 horas</p>
+                    </article>
+                    <article class="curso-item">
+                        <img src="asb2.webp" alt="Herramientas de TCC">
+                        <h3>Herramientas de TCC</h3>
+                        <p>Técnicas prácticas de Terapia Cognitivo-Conductual.</p>
+                        <p class="precio">Costo: $40</p>
+                        <p class="duracion">Duración: 4 horas</p>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="container footer-contenido">
             <p class="footer-nombre">MP Psicología</p>
@@ -81,16 +82,9 @@
             <p class="footer-copy">&copy; 2025 MP Psicología. Todos los derechos reservados.</p>
         </div>
     </footer>
-<script src="scripts/main.js"></script>
-    <script>
-
-        const contactForm = document.getElementById('contact-form');
-        const successMsg = document.getElementById('form-success');
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            successMsg.style.display = 'block';
-            contactForm.reset();
-        });
-    </script>
+    <a href="https://wa.me/541165992142" target="_blank" id="floating-wpp" class="floating-wpp">
+        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4ac.svg" alt="WhatsApp">
+    </a>
 </body>
+<script src="scripts/main.js"></script>
 </html>
