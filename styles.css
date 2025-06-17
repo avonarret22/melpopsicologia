@@ -137,7 +137,7 @@ img {
 }
 
 .submenu-items {
-  display: none;
+  display: none !important;
   position: absolute;
   left: 0;
   top: 100%;
@@ -149,6 +149,9 @@ img {
   border-radius: 6px;
   min-width: 160px;
   z-index: 200;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
 }
 
 .submenu-items li a {
@@ -162,8 +165,12 @@ img {
   color: var(--verde-btn);
 }
 
+
+.submenu:hover > .submenu-items,
 .submenu.open > .submenu-items {
-  display: block;
+  display: block !important;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .nav-parent .arrow {
@@ -605,6 +612,16 @@ img {
   .submenu-items {
     position: static;
     box-shadow: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    display: none !important;
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .submenu.open > .submenu-items {
+    display: block !important;
   }
   .nav-toggle {
     display: flex;
