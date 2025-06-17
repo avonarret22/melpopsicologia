@@ -163,9 +163,14 @@ img {
 }
 
 .submenu:hover > .submenu-items,
-.submenu:focus-within > .submenu-items,
-.submenu.open > .submenu-items {
+.submenu:focus-within > .submenu-items {
   display: block;
+}
+
+@media (max-width: 900px) {
+  .submenu.open > .submenu-items {
+    display: block;
+  }
 }
 
 .insta-icon {
