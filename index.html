@@ -62,8 +62,16 @@
                     Agendá tu cita
                 </a>
             </div>
-            <div class="hero-img animate-on-scroll">
-                <img src="psicoshero1.png" alt="Ilustración personas acompañándose" loading="lazy">
+            <div class="hero-carousel animate-on-scroll">
+                <div class="hero-slide active">
+                    <img src="psicoshero1.png" alt="Ilustración personas acompañándose" loading="lazy">
+                </div>
+                <div class="hero-slide">
+                    <img src="circulo.gif" alt="Círculo animado" loading="lazy">
+                </div>
+                <div class="hero-slide">
+                    <img src="circuloconfi.gif" alt="Confianza animada" loading="lazy">
+                </div>
             </div>
         </section>
 
@@ -191,6 +199,21 @@
 </body>
 <script src="scripts/main.js"></script>
 <script>
+    // Carrusel de hero
+    const heroSlides = document.querySelectorAll('.hero-slide');
+    let heroIndex = 0;
+    function showHeroSlide(index) {
+        heroSlides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+    }
+    function nextHeroSlide() {
+        heroIndex = (heroIndex + 1) % heroSlides.length;
+        showHeroSlide(heroIndex);
+    }
+    setInterval(nextHeroSlide, 5000);
+    showHeroSlide(heroIndex);
+
     // Carrusel de profesionales
     const carrusel = document.getElementById("carruselEquipo");
     const btnIzq = document.getElementById("btnIzq");
