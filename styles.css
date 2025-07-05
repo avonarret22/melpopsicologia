@@ -278,6 +278,7 @@ img {
   min-width: 320px;
   position: relative;
   overflow: hidden;
+  aspect-ratio: 3 / 2;
 }
 
 .hero-carousel img {
