@@ -16,9 +16,10 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts/tailwind.config.js"></script>
 </head>
-<body>
-    <header class="header bg-[#b4c5b4] sticky top-0 z-50 w-full shadow">
+<body class="font-sans bg-background text-text">
+    <header class="header sticky top-0 z-50 w-full shadow bg-header">
         <div class="max-w-7xl mx-auto flex items-center justify-between h-20 px-6">
             <a href="index.html" class="logo">
                 <img src="logo-mp.png" alt="Logo MP Psicología" loading="lazy">
@@ -77,8 +78,8 @@
                     <label class="font-semibold" for="email">Correo electrónico</label>
                     <input class="border border-gray-300 rounded-md p-2" type="email" id="email" name="email" required>
 
-                    <button class="bg-[#587060] hover:bg-[#42594b] text-white font-semibold py-3 px-6 rounded-md" type="submit">Enviar</button>
-                    <p id="form-success" class="success-message" style="display:none;">¡Gracias por contactarnos!</p>
+                    <button class="bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-6 rounded-md" type="submit">Enviar</button>
+                    <p id="form-success" class="success-message text-heading" style="display:none;">¡Gracias por contactarnos!</p>
                 </form>
             </div>
         </section>
