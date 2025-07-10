@@ -13,6 +13,7 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_ES">
     <title>Cursos - MP Psicología</title>
+    <link rel="stylesheet" href="tailwind.css">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -53,26 +54,26 @@
     </header>
 
     <main>
-        <section class="cursos">
+        <section class="cursos py-16 bg-[#f9f7f3]">
             <div class="container animate-on-scroll">
-                <h1>Cursos</h1>
-                <p class="subtitle">Explorá nuestro material audiovisual pensado para tu crecimiento.</p>
-                <div class="cursos-grid">
-                    <article class="curso-item">
+                <h1 class="text-3xl font-bold text-center text-[#294331]">Cursos</h1>
+                <p class="subtitle text-center text-lg text-[#42594b]">Explorá nuestro material audiovisual pensado para tu crecimiento.</p>
+                <div class="cursos-grid grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mt-8">
+                    <article class="curso-item bg-white rounded-xl p-6 text-center shadow">
                         <img src="abst1.webp" alt="Introducción a la Psicología" loading="lazy">
                         <h3>Introducción a la Psicología</h3>
                         <p>Conceptos básicos para comprender el comportamiento humano.</p>
                         <p class="precio">Costo: $30</p>
                         <p class="duracion">Duración: 3 horas</p>
                     </article>
-                    <article class="curso-item">
+                    <article class="curso-item bg-white rounded-xl p-6 text-center shadow">
                         <img src="contempla.webp" alt="Mindfulness para la vida diaria" loading="lazy">
                         <h3>Mindfulness para la vida diaria</h3>
                         <p>Estrategias de atención plena para reducir el estrés.</p>
                         <p class="precio">Costo: $25</p>
                         <p class="duracion">Duración: 2 horas</p>
                     </article>
-                    <article class="curso-item">
+                    <article class="curso-item bg-white rounded-xl p-6 text-center shadow">
                         <img src="asb2.webp" alt="Herramientas de TCC" loading="lazy">
                         <h3>Herramientas de TCC</h3>
                         <p>Técnicas prácticas de Terapia Cognitivo-Conductual.</p>

@@ -1,0 +1,19 @@
+{
+  "name": "melpopsicologia",
+  "version": "1.0.0",
+  "description": "Este repositorio contiene el código fuente del sitio web de **MP Psicología**. La página estática presenta a un equipo de psicólogas y ofrece un formulario de contacto para solicitar turnos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./src/tailwind.css -o ./tailwind.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
+  }
+}
