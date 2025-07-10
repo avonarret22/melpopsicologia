@@ -15,10 +15,11 @@
     <title>Contacto - MP Psicología</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="container header-container">
+    <header class="header bg-[#b4c5b4] sticky top-0 z-50 w-full shadow">
+        <div class="max-w-7xl mx-auto flex items-center justify-between h-20 px-6">
             <a href="index.html" class="logo">
                 <img src="logo-mp.png" alt="Logo MP Psicología" loading="lazy">
             </a>
@@ -54,29 +55,29 @@
         <section class="contacto">
             <div class="container animate-on-scroll">
                 <h2>Contacto</h2>
-                <form class="contact-form" id="contact-form">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                <form class="contact-form grid gap-4" id="contact-form">
+                    <label class="font-semibold" for="nombre">Nombre</label>
+                    <input class="border border-gray-300 rounded-md p-2" type="text" id="nombre" name="nombre" required>
 
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" name="apellido" required>
+                    <label class="font-semibold" for="apellido">Apellido</label>
+                    <input class="border border-gray-300 rounded-md p-2" type="text" id="apellido" name="apellido" required>
 
-                    <label for="edad">Edad</label>
-                    <input type="number" id="edad" name="edad" min="0" required>
+                    <label class="font-semibold" for="edad">Edad</label>
+                    <input class="border border-gray-300 rounded-md p-2" type="number" id="edad" name="edad" min="0" required>
 
-                    <label for="genero">Género</label>
-                    <input type="text" id="genero" name="genero" required>
+                    <label class="font-semibold" for="genero">Género</label>
+                    <input class="border border-gray-300 rounded-md p-2" type="text" id="genero" name="genero" required>
 
-                    <label for="ocupacion">Ocupación</label>
-                    <input type="text" id="ocupacion" name="ocupacion">
+                    <label class="font-semibold" for="ocupacion">Ocupación</label>
+                    <input class="border border-gray-300 rounded-md p-2" type="text" id="ocupacion" name="ocupacion">
 
-                    <label for="telefono">Teléfono de contacto</label>
-                    <input type="tel" id="telefono" name="telefono" required>
+                    <label class="font-semibold" for="telefono">Teléfono de contacto</label>
+                    <input class="border border-gray-300 rounded-md p-2" type="tel" id="telefono" name="telefono" required>
 
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" required>
+                    <label class="font-semibold" for="email">Correo electrónico</label>
+                    <input class="border border-gray-300 rounded-md p-2" type="email" id="email" name="email" required>
 
-                    <button type="submit">Enviar</button>
+                    <button class="bg-[#587060] hover:bg-[#42594b] text-white font-semibold py-3 px-6 rounded-md" type="submit">Enviar</button>
                     <p id="form-success" class="success-message" style="display:none;">¡Gracias por contactarnos!</p>
                 </form>
             </div>
