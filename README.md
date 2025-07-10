@@ -25,11 +25,11 @@ Al pie de cada página se recuerda el objetivo del espacio: *"Espacios de escuch
 2. Abrir `index.html` con cualquier navegador web para ver la portada.
 3. Desde la portada se puede acceder a `contacto.html`, o abrirlo directamente en el navegador para completar el formulario de contacto.
 
-Al ser un sitio estático no se requieren dependencias ni entorno de servidor. Los archivos pueden abrirse localmente o servirse desde cualquier hosting estático.
+Al ser un sitio estático no se requieren dependencias ni entorno de servidor. Los archivos pueden abrirse localmente o servirse desde cualquier hosting estático. El diseño utiliza Tailwind CSS cargado desde su CDN, por lo que no es necesario compilar estilos.
 
 ## Guía básica para contribuir
 
-- Utiliza **HTML5** y **CSS** plano. Procura seguir la estructura existente.
+- Utiliza **HTML5** con clases de **Tailwind CSS** cuando sea posible. Procura mantener la estructura existente.
 - Incluye texto alternativo en las imágenes y respeta la paleta de colores actual.
 - Antes de enviar cambios, comprueba que ambas páginas funcionen correctamente en navegadores modernos.
 - Envía un pull request describiendo los cambios propuestos.
