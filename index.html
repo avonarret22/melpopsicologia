@@ -1,6 +1,8 @@
+<!-- Página principal de MP Psicología -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Metadatos y enlaces. Modificar aquí actualizará la información de navegadores y redes sociales -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Espacios de escucha, cuidado y acompañamiento emocional. Atención psicológica profesional y cálida.">
@@ -19,6 +21,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <!-- Contenido principal de la página -->
+    <!-- Encabezado y navegación principal. Cambiar los enlaces modificará el menú -->
     <header class="header bg-[#b4c5b4] sticky top-0 z-50 w-full shadow">
         <div class="max-w-7xl mx-auto flex items-center justify-between h-20 px-6">
             <a href="#" class="logo">
@@ -29,8 +33,9 @@
                     <li><a class="nav-link" href="#">Inicio</a></li>
                     <li><a class="nav-link" href="#about">Sobre nosotras</a></li>
                     <li><a class="nav-link" href="#equipo">Nuestro equipo</a></li>
+                    <!-- Menú desplegable con enlaces a contenido del sitio -->
                     <li class="submenu">
-                        <a class="nav-link nav-parent" href="#">Contenidos<span class="arrow">&#9662;</span></a>
+                        <a class="nav-link nav-parent" href="#">Contenidos</a>
                         <ul class="submenu-items">
                             <li><a class="nav-link" href="blog.html">Blog</a></li>
                             <li><a class="nav-link" href="#">Noticias</a></li>
@@ -45,6 +50,7 @@
                     </li>
                 </ul>
             </nav>
+            <!-- Botón para mostrar/ocultar menú en pantallas pequeñas -->
             <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -54,6 +60,7 @@
     </header>
 
     <main>
+        <!-- Sección principal con mensaje de bienvenida y carrusel -->
         <section class="hero">
             <div class="hero-content animate-on-scroll">
                 <h1>Tu espacio para<br>sentirte acompañado/a</h1>
@@ -76,6 +83,7 @@
             </div>
         </section>
 
+        <!-- Beneficios del servicio -->
         <section class="benefits">
             <div class="container animate-on-scroll">
                 <h2>¿Por qué elegir Melpopsicologia?</h2>
@@ -97,6 +105,7 @@
             </div>
         </section>
 
+        <!-- Información acerca del equipo -->
         <section id="about" class="about">
             <div class="container about-content">
                 <div class="about-text animate-on-scroll">
@@ -109,6 +118,8 @@
             </div>
         </section>
 
+        <!-- Testimonios de pacientes -->
+        <!-- Testimonios de pacientes -->
         <section id="opiniones" class="opiniones">
             <div class="container animate-on-scroll">
                 <h2>Lo que dicen quienes nos eligen</h2>
@@ -129,6 +140,7 @@
             </div>
         </section>
     </main>
+   <!-- Carrusel con la presentación de profesionales -->
    <section id="equipo" class="equipo">
   <div class="container animate-on-scroll">
     <h2 class="equipo-titulo">Nuestro equipo</h2>
@@ -176,6 +188,7 @@
   </div>
 </section>
 
+        <!-- Feed incrustado de Instagram -->
         <section id="instagram" class="instagram-section">
             <div class="container">
                 <h2>Últimos posts en Instagram</h2>
@@ -186,6 +199,7 @@
             </div>
         </section>
 
+<!-- Pie de página con datos de contacto -->
 <footer class="footer">
   <div class="container footer-contenido">
     <p class="footer-nombre">MP Psicología</p>
@@ -194,11 +208,14 @@
     <p class="footer-copy">&copy; 2025 MP Psicología. Todos los derechos reservados.</p>
   </div>
 </footer>
+<!-- Botón flotante de WhatsApp -->
 <a href="https://wa.me/541165992142" target="_blank" rel="noopener noreferrer" id="floating-wpp" class="floating-wpp">
     <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4ac.svg" alt="WhatsApp" loading="lazy">
 </a>
 </body>
+<!-- Carga de scripts comunes -->
 <script src="scripts/main.js"></script>
+<!-- Scripts específicos de esta página (carruseles) -->
 <script>
     // Carrusel de hero
     const heroSlides = document.querySelectorAll('.hero-slide');
@@ -248,4 +265,5 @@
     carrusel.addEventListener('mouseleave', startAuto);
     carrusel.addEventListener('touchend', startAuto);
 </script>
+<!-- Fin de scripts de la página -->
 </html>
