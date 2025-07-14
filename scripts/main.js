@@ -1,4 +1,6 @@
+// Scripts base del sitio
 // Common scripts for MP Psicología
+// Maneja la apertura y cierre del menú de navegación
 
 // Toggle navigation menu
 function setupMenuToggle() {
@@ -46,6 +48,7 @@ function setupMenuToggle() {
     }
 }
 
+// Aplica animaciones cuando los elementos entran en pantalla
 function setupScrollAnimations() {
     const items = document.querySelectorAll('.animate-on-scroll');
     const observer = new IntersectionObserver(entries => {
@@ -60,6 +63,7 @@ function setupScrollAnimations() {
     items.forEach(el => observer.observe(el));
 }
 
+// Muestra el botón flotante de WhatsApp al hacer scroll
 function setupFloatingWpp() {
     const btn = document.getElementById('floating-wpp');
     if (!btn) return;
@@ -73,6 +77,7 @@ function setupFloatingWpp() {
     window.addEventListener('scroll', toggle);
     toggle();
 }
+// Ejecutar configuraciones cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', () => {
     setupMenuToggle();
     setupScrollAnimations();

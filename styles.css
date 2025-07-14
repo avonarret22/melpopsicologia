@@ -1,3 +1,4 @@
+/* Variables globales de color: cambian la paleta de todo el sitio */
 :root {
   --verde-header: #b4c5b4;
   --verde-fondo: #f9f7f3;
@@ -36,6 +37,7 @@ img {
   display: block;
 }
 
+/* Contenedor central para limitar el ancho */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -58,6 +60,7 @@ img {
 }
 
 /* --- Header --- */
+/* Estilos de la cabecera; modificar colores o alturas cambia el aspecto del menú */
 .header {
   background: var(--verde-header);
   position: sticky;
@@ -173,15 +176,7 @@ img {
   transform: translateY(0);
 }
 
-.nav-parent .arrow {
-  margin-left: 4px;
-  transition: transform 0.3s ease;
-  display: inline-block;
-}
 
-.submenu.open .nav-parent .arrow {
-  transform: rotate(180deg);
-}
 
 .insta-icon {
   width: 24px;
@@ -191,6 +186,7 @@ img {
 
 /* --- Menú hamburguesa (mobile) --- */
 .nav-toggle {
+/* Botón del menú en móviles. Modificar tamaños para cambiar su apariencia */
   display: none;
   flex-direction: column;
   background: none;
@@ -211,6 +207,7 @@ img {
 }
 
 /* --- Hero --- */
+/* Sección principal de la portada */
 .hero {
   display: flex;
   align-items: center;
@@ -306,6 +303,7 @@ img {
 
 
 /* === Sobre nosotras === */
+/* Estilos de la sección informativa */
 .about {
   background: var(--blanco);
   padding: 60px 0;
@@ -338,6 +336,7 @@ img {
 }
 
 /* === Beneficios === */
+/* Tarjetas con ventajas de elegirnos */
 .benefits {
   background: var(--blanco);
   padding: 60px 0;
@@ -379,6 +378,7 @@ img {
 }
 
 /* === Opiniones === */
+/* Comentarios de pacientes */
 .opiniones {
   background: var(--blanco);
   padding: 60px 0;
@@ -427,6 +427,7 @@ img {
   }
 }
 /* === Nuestro equipo === */
+/* Carrusel de profesionales */
 .equipo {
   background: #fff;
   padding: 60px 0;
@@ -509,6 +510,7 @@ img {
 }
 
 /* === Instagram === */
+/* Galería embebida desde la red social */
 .instagram-section {
   background: var(--blanco);
   padding: 60px 0;
@@ -536,6 +538,7 @@ img {
 }
 
 /* Floating WhatsApp */
+/* Botón de contacto rápido */
 .floating-wpp {
   position: fixed;
   bottom: 20px;
@@ -752,6 +755,7 @@ img {
 }
 
 /* === Contacto === */
+/* Formulario para que los usuarios se comuniquen */
 .contacto {
   background: #fff;
   padding: 60px 0;
@@ -804,6 +808,7 @@ img {
 }
 
 /* --- Blog --- */
+/* Publicaciones y fechas */
 .blog-list {
   display: flex;
   flex-direction: column;
@@ -823,6 +828,7 @@ img {
 }
 
 /* --- Cursos --- */
+/* Tarjetas de los cursos disponibles */
 .cursos-grid {
   display: flex;
   flex-wrap: wrap;
